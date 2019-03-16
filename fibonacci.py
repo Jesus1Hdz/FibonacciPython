@@ -13,7 +13,6 @@ def FibonacciGenerator():
 		fibonacci_sucession.append(next_number)
 		yield next_number
 
-
 def FibonacciSucession(end):
 	"""Returns a list with fibonacci sucession."""
 	try:
@@ -24,12 +23,11 @@ def FibonacciSucession(end):
 		return fibonacci_sucession
 
 	except ValueError:
-		print("Introduce un numero, por favor.")
+		print("Introduce un número, por favor.")
 		FibonacciSucession(end)
 
 	finally:
-		system("cls")
-
+		system("clear")
 
 while True:
 
@@ -44,9 +42,8 @@ while True:
 	elif option == "2":
 		print("Adios... :^)")
 		sleep(1)
-		system("cls")
+		system("clear")
 		break
-
 	
 	else:
-		system("cls")
+		system("clear")
